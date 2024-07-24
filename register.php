@@ -10,10 +10,11 @@
 
         <h1 class="text-3xl mb-4">Register</h1>
 
-        <form class="flex flex-col" action="/api/auth.php">
-            <input type="text" required max="50" class="input input-bordered mb-4" placeholder="your name">
-            <input type="email" required max="50" class="input input-bordered mb-4" placeholder="email">
-            <input type="password" required max="20" class="input input-bordered mb-4" placeholder="password">
+        <form class="flex flex-col" method="POST" action="/api/auth/register.php">
+            <input type="text" name="name" required max="50" class="input input-bordered mb-4" placeholder="your name">
+            <input type="email" name="email" required max="50" class="input input-bordered mb-4" placeholder="email">
+            <input type="password" name="password" required max="20" class="input input-bordered mb-4"
+                placeholder="password">
             <button type="submit" class="btn btn-primary">Register</button>
         </form>
     </div>
