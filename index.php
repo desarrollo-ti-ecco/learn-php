@@ -4,8 +4,8 @@
 <?php include 'partials/head.php' ?>
 
 <body>
-    <h1>Hello world</h1>
-    <a class="btn btn-outline" href="login.php">Log in</a>
+    <?php include 'partials/components/navbar.php' ?>
+    <h1>Welcome to your school</h1>
 </body>
 
 </html>
