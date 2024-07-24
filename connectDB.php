@@ -9,4 +9,11 @@ function connect_db()
 
     $mysqli = new mysqli($server, $user, $password, $dbname);
 
+    /* test connection */
+    if ($mysqli->connect_errno) {
+        printf("Failed connection: %s\n", $mysqli->connect_error);
+        exit();
+    }
+
+    return $mysqli;
 }
